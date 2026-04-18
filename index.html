@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformer Nexus UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing" id="landing">
+      <div class="hangar" aria-hidden="true"></div>
+      <div class="bokeh" aria-hidden="true"></div>
+      <div class="grid-overlay" aria-hidden="true"></div>
+
+      <header class="navbar">
+        <a class="brand" href="#">
+          <span class="brand-dot"></span>
+          <span>Transformer Nexus</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#platform">Platform</a>
+          <a href="#telemetry">Telemetry</a>
+          <a href="#control">Control</a>
+        </nav>
+        <p class="nav-state">
+          <span class="state-light"></span>
+          <span>System Status: Active</span>
+        </p>
+      </header>
+
+      <main class="hero-grid" id="platform">
+        <section class="hero-copy">
+          <p class="eyebrow">AUTONOMOUS CORE ARCHITECTURE</p>
+          <h1>Transform Your Workflow</h1>
+          <p class="subtext">
+            A high-end, futuristic control platform inspired by autonomous transformer units, with cinematic depth,
+            metallic realism, and live system intelligence.
+          </p>
+          <button class="cta" type="button" data-scroll="telemetry">View Live Telemetry</button>
+
+          <div class="metrics-inline">
+            <article class="glass-card">
+              <p class="label">Sync Throughput</p>
+              <p class="value" id="throughputValue">1.21 PB/s</p>
+              <div class="skeleton-line"></div>
+            </article>
+            <article class="glass-card">
+              <p class="label">Neural Latency</p>
+              <p class="value" id="latencyValue">0.82 ms</p>
+              <div class="skeleton-line short"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="core-wrap" aria-hidden="true">
+          <div class="core-tilt" id="coreTilt">
+            <div class="mechanical-core">
+              <div class="ring ring-outer"></div>
+              <div class="ring ring-middle"></div>
+              <div class="ring ring-inner"></div>
+
+              <div class="plate plate-a"></div>
+              <div class="plate plate-b"></div>
+              <div class="plate plate-c"></div>
+
+              <div class="energy energy-a"></div>
+              <div class="energy energy-b"></div>
+              <div class="energy energy-c"></div>
+
+              <div class="hub"></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="telemetry-stack" id="telemetry">
+          <article class="glass-card hud-card">
+            <p class="label">System Status</p>
+            <p class="value state-active" id="systemState" aria-live="polite" aria-atomic="true">
+              Active
+            </p>
+            <p class="small">Adaptive control loop engaged</p>
+            <p class="small last-updated">
+              Last updated:
+              <span id="lastUpdatedValue">--:--:--</span>
+            </p>
+            <div class="skeleton-line"></div>
+          </article>
+
+          <article class="glass-card hud-card">
+            <p class="label">Structural Integrity</p>
+            <p class="value" id="stabilityValue">99.98%</p>
+            <p class="small">Titanium shell and plate response nominal</p>
+            <div class="skeleton-line short"></div>
+          </article>
+
+          <article class="glass-card hud-card" id="control">
+            <p class="label">Core Temperature</p>
+            <p class="value" id="temperatureValue">421 K</p>
+            <p class="small">Heat-treated steel envelope in operating window</p>
+            <div class="skeleton-line"></div>
+          </article>
+        </aside>
+      </main>
+
+      <article class="floating-card left-float glass-card">
+        <p class="label">Power Draw</p>
+        <p class="value" id="powerValue">4.9 TW</p>
+        <p class="small">Cyan energy veins stabilizing phase shift</p>
+      </article>
+
+      <article class="floating-card right-float glass-card">
+        <p class="label">Uptime</p>
+        <p class="value" id="uptimeValue">372h 15m</p>
+        <p class="small">Continuous operation, no critical faults</p>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
